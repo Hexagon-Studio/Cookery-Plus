@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "cutting_board"
+      },
+      "name": "default"
+    }
+  }
+}

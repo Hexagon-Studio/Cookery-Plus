@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "empty_cast_iron"
+      },
+      "name": "default"
+    },
+    "with_water": {
+      "map": {
+        "1": "cast_iron_with_water"
+      },
+      "name": "with_water"
+    },
+    "empty": {
+      "map": {
+        "1": "empty_cast_iron"
+      },
+      "name": "empty"
+    }
+  }
+}

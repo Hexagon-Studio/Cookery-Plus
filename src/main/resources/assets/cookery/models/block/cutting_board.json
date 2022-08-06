@@ -1,0 +1,8 @@
+{
+  "parent": "cookery:custom/cutting_board",
+  "textures": {
+    "all": "cookery:blocks/cutting_board",
+    "particle": "cookery:blocks/cutting_board",
+    "0": "cookery:blocks/cutting_board"
+  }
+}

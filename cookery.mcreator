@@ -1,28 +1,176 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "CuttingBoard",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cutting_board",
+      "path": "~/Cooking"
+    },
+    {
+      "name": "Kitchen",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kitchen",
+      "path": "~/Cooking"
+    },
+    {
+      "name": "EmptyCastIron",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_cast_iron",
+      "path": "~/Cooking"
+    },
+    {
+      "name": "WaterCastIron",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_cast_iron",
+      "path": "~/Cooking"
+    },
+    {
+      "name": "BoardCraft",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "board_craft",
+      "path": "~/Cooking"
+    },
+    {
+      "name": "CraftCastIron",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_cast_iron",
+      "path": "~/Cooking"
+    },
+    {
+      "name": "CuttingBoardGUI",
+      "type": "gui",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cutting_board_gui",
+      "path": "~/Cooking"
+    },
+    {
+      "name": "CraftingOnCuttingBoard",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafting_on_cutting_board",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cooking"
+    },
+    {
+      "name": "RawBarbecue",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_barbecue",
+      "path": "~/Food"
+    },
+    {
+      "name": "Barbecue",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barbecue",
+      "path": "~/Food"
+    },
+    {
+      "name": "BarbecueCraft",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barbecue_craft",
+      "path": "~/Food"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "ru_ru": {
+      "block.cookery.water_cast_iron": "Казан с водой",
+      "block.cookery.cutting_board": "Доска для резки",
+      "block.cookery.empty_cast_iron": "Пустой казан",
+      "item.cookery.barbecue": "Шашлык",
+      "item.cookery.raw_barbecue": "Сырой шашлык",
+      "itemGroup.tabkitchen": "Кухня"
+    },
+    "en_us": {
+      "block.cookery.water_cast_iron": "Cast iron with water",
+      "block.cookery.cutting_board": "Cutting board",
+      "block.cookery.empty_cast_iron": "Empty cast iron",
+      "item.cookery.barbecue": "Barbecue",
+      "item.cookery.raw_barbecue": "Raw barbecue",
+      "itemGroup.tabkitchen": "Kitchen"
+    }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Cooking",
+        "children": []
+      },
+      {
+        "name": "Food",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "cookery",
     "modName": "Cookery Plus",
-    "version": "1.0.0",
-    "author": "chizh, MCreator",
-    "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "version": "1.0.0.1",
+    "description": "Cookery Plus is a mod that adds new cooking mechanics and new types of food to Minecraft  ",
+    "author": "Hexagon Studio",
+    "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/cookery-plus",
+    "license": "GNU General Public License version 3 (GPLv3)",
     "disableForgeVersionCheck": true,
-    "serverSideOnly": false,
+    "serverSideOnly": true,
+    "updateURL": "https://raw.githubusercontent.com/Hexagon-Studio/Cookery-Plus/main/changelog.json",
+    "modPicture": "logo",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.18.2",
+    "credits": "Created by MagicalAlexey, with the support of Chiffon Medal",
     "modElementsPackage": "cookery.cookeryplus",
     "lockBaseModFiles": false
   },

@@ -1,0 +1,11 @@
+{
+  "_fv": 32,
+  "_type": "tab",
+  "definition": {
+    "name": "Kitchen",
+    "icon": {
+      "value": "CUSTOM:CuttingBoard"
+    },
+    "showSearch": false
+  }
+}
