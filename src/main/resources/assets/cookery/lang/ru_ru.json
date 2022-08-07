@@ -1,8 +1,10 @@
 {
+  "item.cookery.barbecue_with_lard": "Barbecue",
   "block.cookery.water_cast_iron": "Казан с водой",
   "block.cookery.cutting_board": "Доска для резки",
   "block.cookery.empty_cast_iron": "Пустой казан",
   "item.cookery.barbecue": "Шашлык",
   "item.cookery.raw_barbecue": "Сырой шашлык",
+  "item.cookery.lard": "Lard",
   "itemGroup.tabkitchen": "Кухня"
 }
