@@ -8,10 +8,10 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.food.FoodProperties;
 
-public class RawBarbecueItem extends Item {
-	public RawBarbecueItem() {
+public class BarbecueWithPotatoItem extends Item {
+	public BarbecueWithPotatoItem() {
 		super(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.2f)
+				.food((new FoodProperties.Builder()).nutrition(10).saturationMod(13f)
 
 						.meat().build()));
 	}

@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "barbecue",
+    "texture": "meat_loaf",
     "customModelName": "Normal",
-    "name": "Barbecue",
+    "name": "Meat loaf",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "FOOD"
@@ -30,8 +30,8 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "isFood": true,
-    "nutritionalValue": 4,
-    "saturation": 0.19999999999999998,
+    "nutritionalValue": 20,
+    "saturation": 21.5,
     "eatResultItem": {
       "value": ""
     },

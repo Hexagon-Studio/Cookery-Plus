@@ -136,30 +136,85 @@
       "locked_code": false,
       "registry_name": "barbecue_with_lard",
       "path": "~/Food"
+    },
+    {
+      "name": "BarbecueWithMushrooms",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barbecue_with_mushrooms",
+      "path": "~/Food"
+    },
+    {
+      "name": "BarbecueWithPotato",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barbecue_with_potato",
+      "path": "~/Food"
+    },
+    {
+      "name": "Barbecuewithmushroomsandpotato",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barbecuewithmushroomsandpotato",
+      "path": "~/Food"
+    },
+    {
+      "name": "MeatLoaf",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meat_loaf",
+      "path": "~/Food"
+    },
+    {
+      "name": "Breadwithlard",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breadwithlard",
+      "path": "~/Food"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "ru_ru": {
+      "item.cookery.barbecue_with_mushrooms": "Шашлык с грибами",
+      "block.cookery.cutting_board": "Доска для резки",
+      "item.cookery.breadwithlard": "Хлеб с салом",
+      "item.cookery.barbecue": "Шашлык",
+      "item.cookery.barbecue_with_potato": "Шашлык с картофелем",
+      "item.cookery.raw_barbecue": "Сырой шашлык",
+      "itemGroup.tabkitchen": "Кухня",
+      "item.cookery.meat_loaf": "Мясной рулет",
       "item.cookery.barbecue_with_lard": "Шашлык с салом",
       "block.cookery.water_cast_iron": "Казан с водой",
-      "block.cookery.cutting_board": "Доска для резки",
+      "item.cookery.barbecuewithmushroomsandpotato": "Шашлык с грибами и картофелем",
       "block.cookery.empty_cast_iron": "Пустой казан",
-      "item.cookery.barbecue": "Шашлык",
-      "item.cookery.raw_barbecue": "Сырой шашлык",
-      "item.cookery.lard": "Сало",
-      "itemGroup.tabkitchen": "Кухня"
+      "item.cookery.lard": "Сало"
     },
     "en_us": {
+      "item.cookery.barbecue_with_mushrooms": "Barbecue with mushrooms",
+      "block.cookery.cutting_board": "Cutting board",
+      "item.cookery.breadwithlard": "Meat loaf",
+      "item.cookery.barbecue": "Barbecue",
+      "item.cookery.barbecue_with_potato": "Barbecue with potato",
+      "item.cookery.raw_barbecue": "Raw barbecue",
+      "itemGroup.tabkitchen": "Kitchen",
+      "item.cookery.meat_loaf": "Meat loaf",
       "item.cookery.barbecue_with_lard": "Barbecue with lard",
       "block.cookery.water_cast_iron": "Cast iron with water",
-      "block.cookery.cutting_board": "Cutting board",
+      "item.cookery.barbecuewithmushroomsandpotato": "Barbecue with mushrooms and potato",
       "block.cookery.empty_cast_iron": "Empty cast iron",
-      "item.cookery.barbecue": "Barbecue",
-      "item.cookery.raw_barbecue": "Raw barbecue",
-      "item.cookery.lard": "Lard",
-      "itemGroup.tabkitchen": "Kitchen"
+      "item.cookery.lard": "Lard"
     }
   },
   "foldersRoot": {
@@ -196,5 +251,5 @@
     "modElementsPackage": "cookery.cookeryplus",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200229111
+  "mcreatorVersion": 202200232523
 }

@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "barbecue",
+    "texture": "barbecue_with_mushrooms_and_potato",
     "customModelName": "Normal",
-    "name": "Barbecue",
+    "name": "Barbecue with mushrooms and potato",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "FOOD"
@@ -30,8 +30,8 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "isFood": true,
-    "nutritionalValue": 4,
-    "saturation": 0.19999999999999998,
+    "nutritionalValue": 14,
+    "saturation": 15.0,
     "eatResultItem": {
       "value": ""
     },
