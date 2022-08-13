@@ -127,7 +127,7 @@ public class CraftingOnCuttingBoardProcedure {
 				BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 				if (_ent != null) {
 					final int _slotid = 3;
-					final ItemStack _setstack = new ItemStack(CookeryModItems.LARD.get());
+					final ItemStack _setstack = new ItemStack(CookeryModItems.RAW_BARBECUE.get());
 					_setstack.setCount((int) (new Object() {
 						public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicInteger _retval = new AtomicInteger(0);
