@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "meat_loaf",
+    "texture": "boiled_water",
     "customModelName": "Normal",
-    "name": "Meat loaf",
+    "name": "Boiled Water",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:FoodCookery"
@@ -13,7 +13,7 @@
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 32,
-    "toolType": 0.0,
+    "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
       "value": ""
@@ -30,13 +30,13 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "isFood": true,
-    "nutritionalValue": 20,
-    "saturation": 21.5,
+    "nutritionalValue": 0,
+    "saturation": 0.0,
     "eatResultItem": {
-      "value": ""
+      "value": "Items.GLASS_BOTTLE"
     },
-    "isMeat": true,
+    "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "eat"
+    "animation": "drink"
   }
 }

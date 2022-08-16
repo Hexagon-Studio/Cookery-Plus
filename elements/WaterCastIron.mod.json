@@ -56,7 +56,7 @@
     "material": {
       "value": "IRON"
     },
-    "tickRate": 0,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -106,15 +106,22 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "hasInventory": false,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
-    "inventorySize": 9,
-    "inventoryStackSize": 64,
+    "hasInventory": true,
+    "guiBoundTo": "CraftOnWaterCastIron",
+    "openGUIOnRightClick": true,
+    "inventorySize": 7,
+    "inventoryStackSize": 1,
     "inventoryDropWhenDestroyed": true,
-    "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [],
-    "inventoryInSlotIDs": [],
+    "inventoryComparatorPower": false,
+    "inventoryOutSlotIDs": [
+      6
+    ],
+    "inventoryInSlotIDs": [
+      1,
+      2,
+      3,
+      4
+    ],
     "hasEnergyStorage": false,
     "energyInitial": 0,
     "energyCapacity": 400000,
@@ -123,6 +130,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "WaterCastIronVariants"
+    },
+    "onTickUpdate": {
+      "name": "WaterCastIronTick"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

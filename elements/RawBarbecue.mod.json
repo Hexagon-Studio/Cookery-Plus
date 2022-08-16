@@ -8,7 +8,7 @@
     "name": "Raw barbecue",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "FOOD"
+      "value": "CUSTOM:FoodCookery"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -33,7 +33,7 @@
     "nutritionalValue": 2,
     "saturation": 0.19999999999999998,
     "eatResultItem": {
-      "value": ""
+      "value": "Items.STICK"
     },
     "isMeat": true,
     "isAlwaysEdible": false,

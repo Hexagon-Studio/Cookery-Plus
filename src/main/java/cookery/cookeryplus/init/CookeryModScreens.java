@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import cookery.cookeryplus.client.gui.CuttingBoardGUIScreen;
+import cookery.cookeryplus.client.gui.CraftOnWaterCastIronScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class CookeryModScreens {
@@ -19,6 +20,7 @@ public class CookeryModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(CookeryModMenus.CUTTING_BOARD_GUI, CuttingBoardGUIScreen::new);
+			MenuScreens.register(CookeryModMenus.CRAFT_ON_WATER_CAST_IRON, CraftOnWaterCastIronScreen::new);
 		});
 	}
 }

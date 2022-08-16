@@ -30,6 +30,7 @@ public class CookeryModBlocks {
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {
 			CuttingBoardBlock.registerRenderLayer();
+			EmptyCastIronBlock.registerRenderLayer();
 			WaterCastIronBlock.registerRenderLayer();
 		}
 	}

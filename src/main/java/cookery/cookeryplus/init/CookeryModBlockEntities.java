@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
+import cookery.cookeryplus.block.entity.WaterCastIronBlockEntity;
 import cookery.cookeryplus.block.entity.CuttingBoardBlockEntity;
 import cookery.cookeryplus.CookeryMod;
 
@@ -18,6 +19,8 @@ public class CookeryModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, CookeryMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> CUTTING_BOARD = register("cutting_board", CookeryModBlocks.CUTTING_BOARD,
 			CuttingBoardBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> WATER_CAST_IRON = register("water_cast_iron", CookeryModBlocks.WATER_CAST_IRON,
+			WaterCastIronBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block,
 			BlockEntityType.BlockEntitySupplier<?> supplier) {

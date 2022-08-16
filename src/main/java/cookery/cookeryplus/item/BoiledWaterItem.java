@@ -1,8 +1,8 @@
 
 package cookery.cookeryplus.item;
 
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
@@ -13,22 +13,22 @@ import net.minecraft.world.entity.LivingEntity;
 
 import cookery.cookeryplus.init.CookeryModTabs;
 
-public class BarbecuewithmushroomsandpotatoItem extends Item {
-	public BarbecuewithmushroomsandpotatoItem() {
+public class BoiledWaterItem extends Item {
+	public BoiledWaterItem() {
 		super(new Item.Properties().tab(CookeryModTabs.TAB_FOOD_COOKERY).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(14).saturationMod(15f)
+				.food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f)
 
-						.meat().build()));
+						.build()));
 	}
 
 	@Override
-	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-		return 0F;
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.DRINK;
 	}
 
 	@Override
 	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
-		ItemStack retval = new ItemStack(Items.STICK);
+		ItemStack retval = new ItemStack(Items.GLASS_BOTTLE);
 		super.finishUsingItem(itemstack, world, entity);
 		if (itemstack.isEmpty()) {
 			return retval;

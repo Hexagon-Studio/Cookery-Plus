@@ -5,11 +5,13 @@
   "item.cookery.barbecue": "Шашлык",
   "item.cookery.barbecue_with_potato": "Шашлык с картофелем",
   "item.cookery.raw_barbecue": "Сырой шашлык",
+  "item.cookery.boiled_water": "Boiled Water",
   "itemGroup.tabkitchen": "Кухня",
   "item.cookery.meat_loaf": "Мясной рулет",
   "item.cookery.barbecue_with_lard": "Шашлык с салом",
   "block.cookery.water_cast_iron": "Казан с водой",
   "item.cookery.barbecuewithmushroomsandpotato": "Шашлык с грибами и картофелем",
   "block.cookery.empty_cast_iron": "Пустой казан",
-  "item.cookery.lard": "Сало"
+  "item.cookery.lard": "Сало",
+  "itemGroup.tabfood_cookery": "Еда"
 }
