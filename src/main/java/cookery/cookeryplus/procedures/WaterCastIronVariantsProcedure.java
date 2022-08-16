@@ -1,6 +1,7 @@
 package cookery.cookeryplus.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.items.ItemHandlerHelper;
 
 import net.minecraft.world.level.block.Blocks;
@@ -8,13 +9,23 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.MenuProvider;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import io.netty.buffer.Unpooled;
+
+import cookery.cookeryplus.world.inventory.CraftOnWaterCastIronMenu;
 import cookery.cookeryplus.init.CookeryModItems;
 import cookery.cookeryplus.init.CookeryModBlocks;
 
@@ -63,6 +74,23 @@ public class WaterCastIronVariantsProcedure {
 					ItemStack _setstack = new ItemStack(CookeryModItems.BOILED_WATER.get());
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				}
+			}
+		} else {
+			{
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = new BlockPos(x, y, z);
+					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return new TextComponent("CraftOnWaterCastIron");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new CraftOnWaterCastIronMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
 				}
 			}
 		}

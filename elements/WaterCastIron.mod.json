@@ -108,7 +108,7 @@
     "particleAmount": 4,
     "hasInventory": true,
     "guiBoundTo": "CraftOnWaterCastIron",
-    "openGUIOnRightClick": true,
+    "openGUIOnRightClick": false,
     "inventorySize": 7,
     "inventoryStackSize": 1,
     "inventoryDropWhenDestroyed": true,

@@ -15,6 +15,8 @@ import net.minecraft.core.BlockPos;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import cookery.cookeryplus.init.CookeryModItems;
+
 public class WaterCastIronTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double previousRecipe = 0;
@@ -36,7 +38,7 @@ public class WaterCastIronTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem() == Items.DIAMOND_SWORD && (new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 1)).getItem() == Items.COD && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -45,7 +47,7 @@ public class WaterCastIronTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == Items.DIAMOND_SWORD && (new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 2)).getItem() == Items.SALMON && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -54,7 +56,7 @@ public class WaterCastIronTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.DIAMOND_SWORD && (new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 3)).getItem() == Items.DRIED_KELP && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -63,7 +65,7 @@ public class WaterCastIronTickProcedure {
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, new BlockPos(x, y, z), 4)).getItem() == Items.DIAMOND_SWORD && (new Object() {
+		}.getItemStack(world, new BlockPos(x, y, z), 4)).getItem() == Items.POTATO && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
@@ -135,7 +137,7 @@ public class WaterCastIronTickProcedure {
 						return blockEntity.getTileData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "timer") >= 200) {
+			}.getValue(world, new BlockPos(x, y, z), "timer") >= 400) {
 				if (new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -218,7 +220,7 @@ public class WaterCastIronTickProcedure {
 						BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 6;
-							final ItemStack _setstack = new ItemStack(Items.TRIDENT);
+							final ItemStack _setstack = new ItemStack(CookeryModItems.FISH_SOUP.get());
 							_setstack.setCount(1);
 							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
 								if (capability instanceof IItemHandlerModifiable)
@@ -393,7 +395,7 @@ public class WaterCastIronTickProcedure {
 							return blockEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "maxFuel"))) * 10));
+				}.getValue(world, new BlockPos(x, y, z), "maxFuel"))) * 20));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}

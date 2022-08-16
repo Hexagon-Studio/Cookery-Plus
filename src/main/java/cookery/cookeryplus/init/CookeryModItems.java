@@ -16,6 +16,7 @@ import net.minecraft.world.item.BlockItem;
 import cookery.cookeryplus.item.RawBarbecueItem;
 import cookery.cookeryplus.item.MeatLoafItem;
 import cookery.cookeryplus.item.LardItem;
+import cookery.cookeryplus.item.FishSoupItem;
 import cookery.cookeryplus.item.BreadwithlardItem;
 import cookery.cookeryplus.item.BoiledWaterItem;
 import cookery.cookeryplus.item.BarbecuewithmushroomsandpotatoItem;
@@ -42,6 +43,7 @@ public class CookeryModItems {
 	public static final RegistryObject<Item> BREADWITHLARD = REGISTRY.register("breadwithlard", () -> new BreadwithlardItem());
 	public static final RegistryObject<Item> MEAT_LOAF = REGISTRY.register("meat_loaf", () -> new MeatLoafItem());
 	public static final RegistryObject<Item> BOILED_WATER = REGISTRY.register("boiled_water", () -> new BoiledWaterItem());
+	public static final RegistryObject<Item> FISH_SOUP = REGISTRY.register("fish_soup", () -> new FishSoupItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
