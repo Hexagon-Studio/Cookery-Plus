@@ -78,7 +78,7 @@ public class CraftOnWaterCastIronScreen extends AbstractContainerScreen<CraftOnW
 			public double getValue(BlockPos pos, String tag) {
 				BlockEntity BlockEntity = world.getBlockEntity(pos);
 				if (BlockEntity != null)
-					return BlockEntity.getTileData().getDouble(tag);
+					return BlockEntity.getPersistentData().getDouble(tag);
 				return 0;
 			}
 		}.getValue(new BlockPos((int) x, (int) y, (int) z), "fuelRemaining")) + "", 78, 25, -12829636);

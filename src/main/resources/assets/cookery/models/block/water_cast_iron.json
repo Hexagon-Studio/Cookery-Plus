@@ -4,5 +4,6 @@
     "all": "cookery:blocks/empty_cast_iron",
     "particle": "cookery:blocks/empty_cast_iron",
     "1": "cookery:blocks/cast_iron_with_water"
-  }
+  },
+  "render_type": "solid"
 }

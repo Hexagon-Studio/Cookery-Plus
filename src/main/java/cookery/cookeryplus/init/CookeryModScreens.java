@@ -1,6 +1,6 @@
 
 /*
- *    MCreator note: This file will be REGENERATED on each build.
+ *	MCreator note: This file will be REGENERATED on each build.
  */
 package cookery.cookeryplus.init;
 
@@ -19,8 +19,8 @@ public class CookeryModScreens {
 	@SubscribeEvent
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
-			MenuScreens.register(CookeryModMenus.CUTTING_BOARD_GUI, CuttingBoardGUIScreen::new);
-			MenuScreens.register(CookeryModMenus.CRAFT_ON_WATER_CAST_IRON, CraftOnWaterCastIronScreen::new);
+			MenuScreens.register(CookeryModMenus.CUTTING_BOARD_GUI.get(), CuttingBoardGUIScreen::new);
+			MenuScreens.register(CookeryModMenus.CRAFT_ON_WATER_CAST_IRON.get(), CraftOnWaterCastIronScreen::new);
 		});
 	}
 }

@@ -4,5 +4,6 @@
     "all": "cookery:blocks/cutting_board",
     "particle": "cookery:blocks/cutting_board",
     "0": "cookery:blocks/cutting_board"
-  }
+  },
+  "render_type": "solid"
 }

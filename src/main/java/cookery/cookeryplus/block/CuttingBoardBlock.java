@@ -2,8 +2,6 @@
 package cookery.cookeryplus.block;
 
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -35,13 +33,10 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Containers;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import java.util.List;
 import java.util.Collections;
@@ -49,7 +44,6 @@ import java.util.Collections;
 import io.netty.buffer.Unpooled;
 
 import cookery.cookeryplus.world.inventory.CuttingBoardGUIMenu;
-import cookery.cookeryplus.init.CookeryModBlocks;
 import cookery.cookeryplus.block.entity.CuttingBoardBlockEntity;
 
 public class CuttingBoardBlock extends Block implements SimpleWaterloggedBlock, EntityBlock {
@@ -114,10 +108,10 @@ public class CuttingBoardBlock extends Block implements SimpleWaterloggedBlock, 
 	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
 		super.use(blockstate, world, pos, entity, hand, hit);
 		if (entity instanceof ServerPlayer player) {
-			NetworkHooks.openGui(player, new MenuProvider() {
+			NetworkHooks.openScreen(player, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return new TextComponent("Cutting board");
+					return Component.literal("Cutting board");
 				}
 
 				@Override
@@ -171,10 +165,5 @@ public class CuttingBoardBlock extends Block implements SimpleWaterloggedBlock, 
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
 		else
 			return 0;
-	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(CookeryModBlocks.CUTTING_BOARD.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

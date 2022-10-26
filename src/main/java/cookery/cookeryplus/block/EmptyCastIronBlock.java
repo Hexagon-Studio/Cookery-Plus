@@ -1,9 +1,6 @@
 
 package cookery.cookeryplus.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
@@ -19,14 +16,11 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import java.util.List;
 import java.util.Collections;
 
 import cookery.cookeryplus.procedures.PourWaterProcedure;
-import cookery.cookeryplus.init.CookeryModBlocks;
 
 public class EmptyCastIronBlock extends Block {
 	public EmptyCastIronBlock() {
@@ -65,10 +59,5 @@ public class EmptyCastIronBlock extends Block {
 
 		PourWaterProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
-	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(CookeryModBlocks.EMPTY_CAST_IRON.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

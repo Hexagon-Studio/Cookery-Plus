@@ -412,10 +412,10 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.18.2",
+    "currentGenerator": "forge-1.19.2",
     "credits": "Created by MagicalAlexey, with the support of Chiffon Medal",
     "modElementsPackage": "cookery.cookeryplus",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200233122
+  "mcreatorVersion": 202200342615
 }

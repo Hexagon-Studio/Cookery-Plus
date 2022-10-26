@@ -31,6 +31,7 @@ import java.util.function.Function;
 import java.util.function.BiConsumer;
 
 import cookery.cookeryplus.init.CookeryModTabs;
+import cookery.cookeryplus.init.CookeryModMenus;
 import cookery.cookeryplus.init.CookeryModItems;
 import cookery.cookeryplus.init.CookeryModBlocks;
 import cookery.cookeryplus.init.CookeryModBlockEntities;
@@ -47,10 +48,13 @@ public class CookeryMod {
 	public CookeryMod() {
 		CookeryModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
 		CookeryModBlocks.REGISTRY.register(bus);
 		CookeryModItems.REGISTRY.register(bus);
 
 		CookeryModBlockEntities.REGISTRY.register(bus);
+
+		CookeryModMenus.REGISTRY.register(bus);
 
 	}
 

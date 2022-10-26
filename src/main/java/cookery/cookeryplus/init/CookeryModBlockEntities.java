@@ -16,7 +16,7 @@ import cookery.cookeryplus.block.entity.CuttingBoardBlockEntity;
 import cookery.cookeryplus.CookeryMod;
 
 public class CookeryModBlockEntities {
-	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, CookeryMod.MODID);
+	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, CookeryMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> CUTTING_BOARD = register("cutting_board", CookeryModBlocks.CUTTING_BOARD,
 			CuttingBoardBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> WATER_CAST_IRON = register("water_cast_iron", CookeryModBlocks.WATER_CAST_IRON,
